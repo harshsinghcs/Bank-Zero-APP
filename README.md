@@ -1,5 +1,3 @@
-# Writing the content of the README.md file to the filesystem
-readme_content = """
 # Bank API
 
 A simple RESTful API for creating and managing bank accounts, with the ability to deposit and withdraw funds.
