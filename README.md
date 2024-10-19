@@ -23,7 +23,7 @@ A simple RESTful API for creating and managing bank accounts, with the ability t
     "balance": 1000.00
 }
 ```
-```
+```json
 {
     "id": 1,
     "name": "John Doe",
@@ -37,7 +37,7 @@ GET /api/bankchor/{id}
 Path Parameter:
 
 id (Long): ID of the bank account to retrieve.
-```
+```json
 {
     "id": 1,
     "name": "John Doe",
@@ -51,7 +51,7 @@ POST /api/bankchor/{id}/deposit
 Path Parameter:
 
 id (Long): ID of the bank account.
-```
+```json
 {
     "amount": 500.00
 }
@@ -64,14 +64,14 @@ POST /api/bankchor/{id}/withdraw
 Path Parameter:
 
 id (Long): ID of the bank account.
-```
+```json
 {
     "amount": 200.00
 }
 ```
 ##Response:
 ###JSON
-```
+```json
 {
     "id": 1,
     "name": "John Doe",
@@ -96,7 +96,7 @@ id (Long): ID of the bank account.
 - Run the application.
 
 ##bash
-```
+```bash
 mvn spring-boot:run
 ```
 
