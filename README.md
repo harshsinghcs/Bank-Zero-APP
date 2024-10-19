@@ -103,3 +103,5 @@ mvn spring-boot:run
 ##Testing the API
 
 - You can use Postman or curl to test the API endpoints. Make sure the application is running on localhost:8080.
+
+Design by Harsh SIngh
