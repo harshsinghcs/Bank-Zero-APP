@@ -69,8 +69,8 @@ id (Long): ID of the bank account.
     "amount": 200.00
 }
 ```
-##Response:
-###JSON
+## Response:
+### JSON
 ```json
 {
     "id": 1,
@@ -78,29 +78,32 @@ id (Long): ID of the bank account.
     "balance": 800.00
 }
 ```
-##Error Handling
+
+## Error Handling
 - If an account is not found, the API will return a 404 error with a message "Account not found".
 
-##Technology Stack
+## Technology Stack
 - Java
 - Spring Boot
 - MySQL (or any preferred database)
 - Lombok (for reducing boilerplate code)
 - Postman (for testing API endpoints)
 
-##Setup Instructions
+## Setup Instructions
 
 - Clone the repository.
 - Set up your database in application.properties or application.yml.
 - Build the project using Maven or Gradle.
 - Run the application.
 
-##bash
+## Bash
+
 ```bash
 mvn spring-boot:run
 ```
 
-##Testing the API
+## Testing the API
+
 
 - You can use Postman or curl to test the API endpoints. Make sure the application is running on localhost:8080.
 
