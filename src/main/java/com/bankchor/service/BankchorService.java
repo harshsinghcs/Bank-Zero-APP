@@ -5,6 +5,7 @@ import com.bankchor.entity.Transaction;
 import com.bankchor.entity.TransactionType;
 import com.bankchor.repository.BankchorRepository;
 import com.bankchor.repository.TransactionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,8 +14,10 @@ import java.util.List;
 @Service
 public class BankchorService {
 
+    @Autowired
     private final BankchorRepository bankchorRepository;
     private final TransactionRepository transactionRepository;
+
 
     // ✅ Constructor Injection (BEST PRACTICE)
     public BankchorService(BankchorRepository bankchorRepository,

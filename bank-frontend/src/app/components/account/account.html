@@ -1,0 +1,56 @@
+<div class="container">
+  <h1>🏦 Bank Account Management</h1>
+
+  <!-- ================= Create Account ================= -->
+  <div class="card">
+    <h2>Create Account</h2>
+
+    <input
+      type="text"
+      [(ngModel)]="name"
+      placeholder="Account Holder Name"
+    />
+
+    <input
+      type="number"
+      [(ngModel)]="amount"
+      placeholder="Initial Balance"
+    />
+
+    <button class="primary" (click)="createAccount()">
+      Create Account
+    </button>
+  </div>
+
+  <!-- ================= Account Operations ================= -->
+  <div class="card">
+    <h2>Account Operations</h2>
+
+    <input
+      type="number"
+      [(ngModel)]="accountId"
+      placeholder="Account ID"
+    />
+
+    <input
+      type="number"
+      [(ngModel)]="amount"
+      placeholder="Amount"
+    />
+
+    <div class="btn-group">
+      <button class="success" (click)="deposit()">Deposit</button>
+      <button class="danger" (click)="withdraw()">Withdraw</button>
+      <button class="secondary" (click)="getAccount()">Get Account</button>
+    </div>
+  </div>
+
+  <!-- ================= Account Details ================= -->
+  <div class="card" *ngIf="account">
+    <h2>Account Details</h2>
+
+    <p><strong>ID:</strong> {{ account.id }}</p>
+    <p><strong>Name:</strong> {{ account.name }}</p>
+    <p><strong>Balance:</strong> ₹{{ account.balance }}</p>
+  </div>
+</div>

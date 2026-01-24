@@ -11,4 +11,9 @@ public class AmountRequest {
     public void setAmount(Double amount) {
         this.amount = amount;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
